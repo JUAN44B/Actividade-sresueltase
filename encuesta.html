@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encuesta 3.0</title>
+    <link rel="stylesheet" type="text/css" href="diseñoencuesta.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Encuesta 3.0</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" min="0">
+
+        <label for="horasSueno">Horas de sueño al día:</label>
+        <input type="number" id="horasSueno" min="0" max="24">
+
+        <label for="horasTrabajo">Horas de trabajo al día:</label>
+        <input type="number" id="horasTrabajo" min="0" max="24">
+
+        <label for="horasOcio">Horas de ocio al día:</label>
+        <input type="number" id="horasOcio" min="0" max="24">
+
+        <label for="horasOtrasActividades">Horas dedicadas a otras actividades al día:</label>
+        <input type="number" id="horasOtrasActividades" min="0" max="24">
+
+        <div class="btn-container">
+            <button onclick="agregarPersona()">Agregar Persona</button>
+            <button onclick="finalizar()">Finalizar</button>
+        </div>
+
+        <div class="result-container">
+            <ul id="resultados"></ul>
+        </div>
+        
+        <div id="return-container">
+            <button onclick="window.location.href='Portdada.html'">Regresar</button>
+        </div>
+    </div>
+
+    <script src="codigoencuesta.js"></script>
+</body>
+</html>
+
+

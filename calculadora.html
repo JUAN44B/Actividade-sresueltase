@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./diseñodecalculadora.css">
+</head>
+<body>
+    <div id="container">
+        <h2>calculadora 2.0</h2>
+        <div class="input-group">
+            <label for="num1">Number 1:</label>
+            <input required id="num1" type="number">
+        </div>
+        <div class="input-group">
+            <label for="num2">Number 2:</label>
+            <input required id="num2" type="number">
+        </div>
+        <div class="input-group">
+            <label for="num3">Number 3:</label>
+            <input required id="num3" type="number">
+        </div>
+        <div class="btn-group">
+            <button id="btn-add" onclick="divisionDosNumeros()">Divide</button>
+            <button id="btn-add" onclick="restaDosNumeros()">Subtract</button>
+            <button id="btn-add" onclick="multiplicacionDosNumeros()">Multiply</button>
+            <button id="btn-add" onclick="sumaDosNumeros()">Add</button>
+            <button id="btn-add" onclick="potenciaDosNumeros()">Power</button>
+            <button id="btn-add" onclick="porcentajeDosNumeros()">%</button>
+        </div>
+        <div id="result">
+            <input disabled id="resultadoInput" type="text">
+        </div>
+        <div id="return-container">
+            <button onclick="window.location.href='Portdada.html'">Regresar</button>
+
+        </div>
+    </div>
+
+    <script src="./codigodelacalculadora.js"></script>
+</body>
+</html>
+
